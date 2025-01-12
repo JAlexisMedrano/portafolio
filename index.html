@@ -485,7 +485,7 @@
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    const response = await fetch('/api/send-email', {  // URL relativa para Vercel
+    const response = await fetch('https://raw.githubusercontent.com/JAlexisMedrano/portafolio/refs/heads/main/api/send-mail.js', {  // URL relativa para Vercel
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message }),
